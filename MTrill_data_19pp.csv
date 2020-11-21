@@ -1,0 +1,761 @@
+Subject	items	prime	test	cumulativity	Structures	EnglishTestGrade
+MC	1	0	baseline	0	PNP or other	14
+MC	2	0	baseline	0	PNP or other	14
+MC	3	1	baseline	0	NP	14
+MC	4	0	baseline	33	PNP or other	14
+MC	5	0	baseline	25	PNP or other	14
+MC	6	0	baseline	20	PNP or other	14
+MC	7	0	baseline	16,7	PNP or other	14
+MC	8	1	baseline	14,2	NP	14
+MC	9	0	baseline	25	PNP or other	14
+MC	10	0	baseline	22,2	PNP or other	14
+MC	11	0	baseline	20	PNP or other	14
+MC	12	0	baseline	18,2	PNP or other	14
+MC	13	0	baseline	16,7	PNP or other	14
+MC	14	0	baseline	15,4	PNP or other	14
+MC	15	0	baseline	14,2	PNP or other	14
+MC	16	0	baseline	13,3	PNP or other	14
+MC	17	0	baseline	12,5	PNP or other	14
+MC	18	0	baseline	11,8	PNP or other	14
+MC	19	0	baseline	11,1	PNP or other	14
+MC	20	0	baseline	10,5	PNP or other	14
+MC	1	0	prime	0	PNP or other	14
+MC	2	0	prime	0	PNP or other	14
+MC	3	0	prime	0	PNP or other	14
+MC	4	1	prime	0	NP	14
+MC	5	1	prime	25	NP	14
+MC	6	0	prime	40	PNP or other	14
+MC	7	1	prime	33,3	NP	14
+MC	8	0	prime	42,8	PNP or other	14
+MC	9	0	prime	37,5	PNP or other	14
+MC	10	0	prime	33,3	PNP or other	14
+MC	11	0	prime	30	PNP or other	14
+MC	12	0	prime	27,3	PNP or other	14
+MC	13	0	prime	25	PNP or other	14
+MC	14	0	prime	23,1	PNP or other	14
+MC	15	0	prime	21,4	PNP or other	14
+MC	16	0	prime	20	PNP or other	14
+MC	17	0	prime	18,8	PNP or other	14
+MC	18	0	prime	17,6	PNP or other	14
+MC	19	0	prime	16,6	PNP or other	14
+MC	20	0	prime	15,8	PNP or other	14
+MR	1	0	baseline	0	PNP or other	12
+MR	2	0	baseline	0	PNP or other	12
+MR	3	0	baseline	0	PNP or other	12
+MR	4	0	baseline	0	PNP or other	12
+MR	5	0	baseline	0	PNP or other	12
+MR	6	0	baseline	0	PNP or other	12
+MR	7	0	baseline	0	PNP or other	12
+MR	8	0	baseline	0	PNP or other	12
+MR	9	0	baseline	0	PNP or other	12
+MR	10	0	baseline	0	PNP or other	12
+MR	11	0	baseline	0	PNP or other	12
+MR	12	0	baseline	0	PNP or other	12
+MR	13	0	baseline	0	PNP or other	12
+MR	14	0	baseline	0	PNP or other	12
+MR	15	0	baseline	0	PNP or other	12
+MR	16	0	baseline	0	PNP or other	12
+MR	17	0	baseline	0	PNP or other	12
+MR	18	1	baseline	0	NP	12
+MR	19	1	baseline	5,6	NP	12
+MR	20	1	baseline	10,5	NP	12
+MR	1	0	prime	0	PNP or other	12
+MR	2	0	prime	0	PNP or other	12
+MR	3	0	prime	0	PNP or other	12
+MR	4	0	prime	0	PNP or other	12
+MR	5	1	prime	0	NP	12
+MR	6	0	prime	20	PNP or other	12
+MR	7	0	prime	16,6	PNP or other	12
+MR	8	0	prime	14,3	PNP or other	12
+MR	9	0	prime	12,5	PNP or other	12
+MR	10	1	prime	11,1	NP	12
+MR	11	1	prime	20	NP	12
+MR	12	1	prime	27,3	NP	12
+MR	13	0	prime	33,3	PNP or other	12
+MR	14	0	prime	30,7	PNP or other	12
+MR	15	0	prime	28,6	PNP or other	12
+MR	16	1	prime	26,7	NP	12
+MR	17	0	prime	31,25	PNP or other	12
+MR	18	0	prime	29,4	PNP or other	12
+MR	19	1	prime	26,3	NP	12
+MR	20	0	prime	31,6	PNP or other	12
+JL	1	0	baseline	0	PNP or other	16
+JL	2	0	baseline	0	PNP or other	16
+JL	3	0	baseline	0	PNP or other	16
+JL	4	0	baseline	0	PNP or other	16
+JL	5	0	baseline	0	PNP or other	16
+JL	6	0	baseline	0	PNP or other	16
+JL	7	1	baseline	0	NP	16
+JL	8	0	baseline	14,3	PNP or other	16
+JL	9	1	baseline	12,5	NP	16
+JL	10	1	baseline	22,2	NP	16
+JL	11	1	baseline	30	NP	16
+JL	12	0	baseline	36,4	PNP or other	16
+JL	13	1	baseline	33,3	NP	16
+JL	14	1	baseline	38,5	NP	16
+JL	15	1	baseline	42,9	NP	16
+JL	16	0	baseline	40	PNP or other	16
+JL	17	1	baseline	43,75	NP	16
+JL	18	1	baseline	47,1	NP	16
+JL	19	1	baseline	50	NP	16
+JL	20	1	baseline	52,6	NP	16
+JL	1	1	prime	0	NP	16
+JL	2	1	prime	100	NP	16
+JL	3	0	prime	100	PNP or other	16
+JL	4	0	prime	66,7	PNP or other	16
+JL	5	1	prime	50	NP	16
+JL	6	1	prime	60	NP	16
+JL	7	1	prime	66,7	NP	16
+JL	8	1	prime	71,4	NP	16
+JL	9	0	prime	75	PNP or other	16
+JL	10	1	prime	66,7	NP	16
+JL	11	0	prime	70	PNP or other	16
+JL	12	1	prime	63,6	NP	16
+JL	13	1	prime	66,6	NP	16
+JL	14	1	prime	69,2	NP	16
+JL	15	0	prime	71,4	PNP or other	16
+JL	16	1	prime	66,7	NP	16
+JL	17	1	prime	68,75	NP	16
+JL	18	1	prime	70,6	NP	16
+JL	19	1	prime	72,2	NP	16
+JL	20	1	prime	73,7	NP	16
+CL	1	0	baseline	0	PNP or other	11
+CL	2	0	baseline	0	PNP or other	11
+CL	3	1	baseline	0	NP	11
+CL	4	0	baseline	33,3	PNP or other	11
+CL	5	0	baseline	25	PNP or other	11
+CL	6	0	baseline	20	PNP or other	11
+CL	7	0	baseline	16,7	PNP or other	11
+CL	8	0	baseline	14,3	PNP or other	11
+CL	9	0	baseline	12,5	PNP or other	11
+CL	10	0	baseline	11,1	PNP or other	11
+CL	11	0	baseline	10	PNP or other	11
+CL	12	0	baseline	9,1	PNP or other	11
+CL	13	0	baseline	8,3	PNP or other	11
+CL	14	1	baseline	7,7	NP	11
+CL	15	0	baseline	14,3	PNP or other	11
+CL	16	1	baseline	13,3	NP	11
+CL	17	0	baseline	18,8	PNP or other	11
+CL	18	0	baseline	17,6	PNP or other	11
+CL	19	1	baseline	16,7	NP	11
+CL	20	1	baseline	21,1	NP	11
+CL	1	1	prime	0	NP	11
+CL	2	1	prime	100	NP	11
+CL	3	1	prime	100	NP	11
+CL	4	1	prime	100	NP	11
+CL	5	1	prime	100	NP	11
+CL	6	0	prime	80	PNP or other	11
+CL	7	1	prime	83,3	NP	11
+CL	8	1	prime	85,7	NP	11
+CL	9	1	prime	87,5	NP	11
+CL	10	1	prime	88,9	NP	11
+CL	11	1	prime	90	NP	11
+CL	12	1	prime	90,1	NP	11
+CL	13	1	prime	91,7	NP	11
+CL	14	1	prime	92,3	NP	11
+CL	15	1	prime	92,9	NP	11
+CL	16	0	prime	93,3	PNP or other	11
+CL	17	1	prime	87,5	NP	11
+CL	18	0	prime	88,2	PNP or other	11
+CL	19	0	prime	83,3	PNP or other	11
+CL	20	0	prime	78,9	PNP or other	11
+JB	1	1	baseline	0	NP	22
+JB	2	1	baseline	100	NP	22
+JB	3	1	baseline	100	NP	22
+JB	4	1	baseline	100	NP	22
+JB	5	1	baseline	100	NP	22
+JB	6	1	baseline	100	NP	22
+JB	7	0	baseline	100	PNP or other	22
+JB	8	1	baseline	85,7	NP	22
+JB	9	1	baseline	87,5	NP	22
+JB	10	1	baseline	88,9	NP	22
+JB	11	1	baseline	90	NP	22
+JB	12	1	baseline	90,1	NP	22
+JB	13	1	baseline	84,7	NP	22
+JB	14	1	baseline	92,3	NP	22
+JB	15	1	baseline	92,9	NP	22
+JB	16	1	baseline	93,3	NP	22
+JB	17	1	baseline	93,8	NP	22
+JB	18	1	baseline	94,1	NP	22
+JB	19	1	baseline	94,4	NP	22
+JB	20	1	baseline	94,7	NP	22
+JB	1	1	prime	0	NP	22
+JB	2	1	prime	100	NP	22
+JB	3	1	prime	100	NP	22
+JB	4	1	prime	100	NP	22
+JB	5	1	prime	100	NP	22
+JB	6	0	prime	100	PNP or other	22
+JB	7	1	prime	83,3	NP	22
+JB	8	1	prime	85,7	NP	22
+JB	9	1	prime	87,5	NP	22
+JB	10	1	prime	88,9	NP	22
+JB	11	1	prime	90	NP	22
+JB	12	1	prime	90,1	NP	22
+JB	13	1	prime	91,6	NP	22
+JB	14	0	prime	92,3	PNP or other	22
+JB	15	1	prime	85,7	NP	22
+JB	16	0	prime	86,7	PNP or other	22
+JB	17	1	prime	81,25	NP	22
+JB	18	0	prime	82,4	PNP or other	22
+JB	19	1	prime	77,8	NP	22
+JB	20	1	prime	78,9	NP	22
+LD	1	0	baseline	0	PNP or other	18
+LD	2	0	baseline	0	PNP or other	18
+LD	3	1	baseline	0	NP	18
+LD	4	1	baseline	33,3	NP	18
+LD	5	1	baseline	50	NP	18
+LD	6	1	baseline	60	NP	18
+LD	7	0	baseline	66,7	PNP or other	18
+LD	8	0	baseline	57,1	PNP or other	18
+LD	9	1	baseline	50	NP	18
+LD	10	0	baseline	55,6	PNP or other	18
+LD	11	1	baseline	50	NP	18
+LD	12	1	baseline	54,5	NP	18
+LD	13	0	baseline	58,3	PNP or other	18
+LD	14	0	baseline	53,8	PNP or other	18
+LD	15	0	baseline	50	PNP or other	18
+LD	16	1	baseline	46,7	NP	18
+LD	17	1	baseline	50	NP	18
+LD	18	0	baseline	52,9	PNP or other	18
+LD	19	0	baseline	50	PNP or other	18
+LD	20	1	baseline	47,4	NP	18
+LD	1	1	prime	0	NP	18
+LD	2	0	prime	100	PNP or other	18
+LD	3	0	prime	50	PNP or other	18
+LD	4	0	prime	33,3	PNP or other	18
+LD	5	1	prime	25	NP	18
+LD	6	1	prime	40	NP	18
+LD	7	1	prime	50	NP	18
+LD	8	0	prime	57,1	PNP or other	18
+LD	9	1	prime	50	NP	18
+LD	10	1	prime	55,5	NP	18
+LD	11	1	prime	60	NP	18
+LD	12	0	prime	63,6	PNP or other	18
+LD	13	0	prime	50	PNP or other	18
+LD	14	1	prime	46,2	NP	18
+LD	15	1	prime	50	NP	18
+LD	16	1	prime	53,3	NP	18
+LD	17	1	prime	56,25	NP	18
+LD	18	0	prime	58,8	PNP or other	18
+LD	19	0	prime	55,6	PNP or other	18
+LD	20	1	prime	57,9	NP	18
+PL	1	1	baseline		NP	24
+PL	2	1	baseline		NP	24
+PL	3	1	baseline		NP	24
+PL	4	1	baseline		NP	24
+PL	5	1	baseline		NP	24
+PL	6	1	baseline		NP	24
+PL	7	1	baseline		NP	24
+PL	8	1	baseline		NP	24
+PL	9	1	baseline		NP	24
+PL	10	1	baseline		NP	24
+PL	11	1	baseline		NP	24
+PL	12	1	baseline		NP	24
+PL	13	1	baseline		NP	24
+PL	14	1	baseline		NP	24
+PL	15	1	baseline		NP	24
+PL	16	1	baseline		NP	24
+PL	17	1	baseline		NP	24
+PL	18	1	baseline		NP	24
+PL	19	1	baseline		NP	24
+PL	20	1	baseline		NP	24
+PL	1	1	prime		NP	24
+PL	2	1	prime		NP	24
+PL	3	1	prime		NP	24
+PL	4	1	prime		NP	24
+PL	5	1	prime		NP	24
+PL	6	1	prime		NP	24
+PL	7	1	prime		NP	24
+PL	8	1	prime		NP	24
+PL	9	1	prime		NP	24
+PL	10	1	prime		NP	24
+PL	11	1	prime		NP	24
+PL	12	1	prime		NP	24
+PL	13	1	prime		NP	24
+PL	14	1	prime		NP	24
+PL	15	1	prime		NP	24
+PL	16	1	prime		NP	24
+PL	17	1	prime		NP	24
+PL	18	1	prime		NP	24
+PL	19	1	prime		NP	24
+PL	20	1	prime		NP	24
+TT	1	0	baseline		PNP or other	16
+TT	2	0	baseline		PNP or other	16
+TT	3	0	baseline		PNP or other	16
+TT	4	0	baseline		PNP or other	16
+TT	5	0	baseline		PNP or other	16
+TT	6	1	baseline		NP	16
+TT	7	0	baseline		PNP or other	16
+TT	8	1	baseline		NP	16
+TT	9	0	baseline		PNP or other	16
+TT	10	0	baseline		PNP or other	16
+TT	11	0	baseline		PNP or other	16
+TT	12	0	baseline		PNP or other	16
+TT	13	0	baseline		PNP or other	16
+TT	14	0	baseline		PNP or other	16
+TT	15	0	baseline		PNP or other	16
+TT	16	0	baseline		PNP or other	16
+TT	17	0	baseline		PNP or other	16
+TT	18	0	baseline		PNP or other	16
+TT	19	0	baseline		PNP or other	16
+TT	20	0	baseline		PNP or other	16
+TT	1	0	prime		PNP or other	16
+TT	2	1	prime		NP	16
+TT	3	0	prime		PNP or other	16
+TT	4	1	prime		NP	16
+TT	5	0	prime		PNP or other	16
+TT	6	0	prime		PNP or other	16
+TT	7	0	prime		PNP or other	16
+TT	8	1	prime		NP	16
+TT	9	1	prime		NP	16
+TT	10	1	prime		NP	16
+TT	11	1	prime		NP	16
+TT	12	1	prime		NP	16
+TT	13	0	prime		PNP or other	16
+TT	14	1	prime		NP	16
+TT	15	1	prime		NP	16
+TT	16	1	prime		NP	16
+TT	17	1	prime		NP	16
+TT	18	1	prime		NP	16
+TT	19	0	prime		PNP or other	16
+TT	20	0	prime		PNP or other	16
+DV	1	0	baseline		PNP or other	11
+DV	2	0	baseline		PNP or other	11
+DV	3	0	baseline		PNP or other	11
+DV	4	0	baseline		PNP or other	11
+DV	5	0	baseline		PNP or other	11
+DV	6	0	baseline		PNP or other	11
+DV	7	0	baseline		PNP or other	11
+DV	8	0	baseline		PNP or other	11
+DV	9	0	baseline		PNP or other	11
+DV	10	0	baseline		PNP or other	11
+DV	11	0	baseline		PNP or other	11
+DV	12	0	baseline		PNP or other	11
+DV	13	0	baseline		PNP or other	11
+DV	14	0	baseline		PNP or other	11
+DV	15	0	baseline		PNP or other	11
+DV	16	0	baseline		PNP or other	11
+DV	17	0	baseline		PNP or other	11
+DV	18	0	baseline		PNP or other	11
+DV	19	0	baseline		PNP or other	11
+DV	20	0	baseline		PNP or other	11
+DV	1	0	prime		PNP or other	11
+DV	2	1	prime		NP	11
+DV	3	0	prime		PNP or other	11
+DV	4	0	prime		PNP or other	11
+DV	5	0	prime		PNP or other	11
+DV	6	0	prime		PNP or other	11
+DV	7	0	prime		PNP or other	11
+DV	8	0	prime		PNP or other	11
+DV	9	1	prime		NP	11
+DV	10	0	prime		PNP or other	11
+DV	11	0	prime		PNP or other	11
+DV	12	1	prime		NP	11
+DV	13	0	prime		PNP or other	11
+DV	14	0	prime		PNP or other	11
+DV	15	0	prime		PNP or other	11
+DV	16	0	prime		PNP or other	11
+DV	17	0	prime		PNP or other	11
+DV	18	0	prime		PNP or other	11
+DV	19	0	prime		PNP or other	11
+DV	20	0	prime		PNP or other	11
+JC	1	0	baseline		PNP or other	13
+JC	2	0	baseline		PNP or other	13
+JC	3	1	baseline		NP	13
+JC	4	1	baseline		NP	13
+JC	5	0	baseline		PNP or other	13
+JC	6	0	baseline		PNP or other	13
+JC	7	0	baseline		PNP or other	13
+JC	8	1	baseline		NP	13
+JC	9	1	baseline		NP	13
+JC	10	0	baseline		PNP or other	13
+JC	11	0	baseline		PNP or other	13
+JC	12	1	baseline		NP	13
+JC	13	1	baseline		NP	13
+JC	14	0	baseline		PNP or other	13
+JC	15	1	baseline		NP	13
+JC	16	1	baseline		NP	13
+JC	17	1	baseline		NP	13
+JC	18	0	baseline		PNP or other	13
+JC	19	0	baseline		PNP or other	13
+JC	20	1	baseline		NP	13
+JC	1	0	prime		PNP or other	13
+JC	2	0	prime		PNP or other	13
+JC	3	0	prime		PNP or other	13
+JC	4	1	prime		NP	13
+JC	5	1	prime		NP	13
+JC	6	1	prime		NP	13
+JC	7	1	prime		NP	13
+JC	8	1	prime		NP	13
+JC	9	1	prime		NP	13
+JC	10	1	prime		NP	13
+JC	11	1	prime		NP	13
+JC	12	1	prime		NP	13
+JC	13	1	prime		NP	13
+JC	14	1	prime		NP	13
+JC	15	1	prime		NP	13
+JC	16	1	prime		NP	13
+JC	17	1	prime		NP	13
+JC	18	1	prime		NP	13
+JC	19	1	prime		NP	13
+JC	20	1	prime		NP	13
+FV	1	1	baseline		NP	8
+FV	2	1	baseline		NP	8
+FV	3	1	baseline		NP	8
+FV	4	0	baseline		PNP or other	8
+FV	5	0	baseline		PNP or other	8
+FV	6	0	baseline		PNP or other	8
+FV	7	0	baseline		PNP or other	8
+FV	8	0	baseline		PNP or other	8
+FV	9	0	baseline		PNP or other	8
+FV	10	0	baseline		PNP or other	8
+FV	11	0	baseline		PNP or other	8
+FV	12	0	baseline		PNP or other	8
+FV	13	0	baseline		PNP or other	8
+FV	14	1	baseline		NP	8
+FV	15	1	baseline		NP	8
+FV	16	1	baseline		NP	8
+FV	17	0	baseline		PNP or other	8
+FV	18	0	baseline		PNP or other	8
+FV	19	0	baseline		PNP or other	8
+FV	20	0	baseline		PNP or other	8
+FV	1	0	prime		PNP or other	8
+FV	2	0	prime		PNP or other	8
+FV	3	0	prime		PNP or other	8
+FV	4	1	prime		NP	8
+FV	5	0	prime		PNP or other	8
+FV	6	0	prime		PNP or other	8
+FV	7	0	prime		PNP or other	8
+FV	8	0	prime		PNP or other	8
+FV	9	0	prime		PNP or other	8
+FV	10	0	prime		PNP or other	8
+FV	11	0	prime		PNP or other	8
+FV	12	0	prime		PNP or other	8
+FV	13	0	prime		PNP or other	8
+FV	14	0	prime		PNP or other	8
+FV	15	0	prime		PNP or other	8
+FV	16	1	prime		NP	8
+FV	17	0	prime		PNP or other	8
+FV	18	1	prime		NP	8
+FV	19	1	prime		NP	8
+FV	20	1	prime		NP	8
+pp1	1	0	baseline		PNP or other	10
+pp1	2	0	baseline		PNP or other	10
+pp1	3	0	baseline		PNP or other	10
+pp1	4	0	baseline		PNP or other	10
+pp1	5	0	baseline		PNP or other	10
+pp1	6	0	baseline		PNP or other	10
+pp1	7	1	baseline		NP	10
+pp1	8	0	baseline		PNP or other	10
+pp1	9	0	baseline		PNP or other	10
+pp1	10	0	baseline		PNP or other	10
+pp1	11	1	baseline		NP	10
+pp1	12	0	baseline		PNP or other	10
+pp1	13	0	baseline		PNP or other	10
+pp1	14	0	baseline		PNP or other	10
+pp1	15	0	baseline		PNP or other	10
+pp1	16	0	baseline		PNP or other	10
+pp1	17	0	baseline		PNP or other	10
+pp1	18	0	baseline		PNP or other	10
+pp1	19	0	baseline		PNP or other	10
+pp1	20	1	baseline		NP	10
+pp1	1	0	prime		PNP or other	10
+pp1	2	0	prime		PNP or other	10
+pp1	3	1	prime		NP	10
+pp1	4	1	prime		NP	10
+pp1	5	0	prime		PNP or other	10
+pp1	6	1	prime		NP	10
+pp1	7	0	prime		PNP or other	10
+pp1	8	1	prime		NP	10
+pp1	9	1	prime		NP	10
+pp1	10	0	prime		PNP or other	10
+pp1	11	1	prime		NP	10
+pp1	12	1	prime		NP	10
+pp1	13	1	prime		NP	10
+pp1	14	1	prime		NP	10
+pp1	15	1	prime		NP	10
+pp1	16	1	prime		NP	10
+pp1	17	1	prime		NP	10
+pp1	18	1	prime		NP	10
+pp1	19	1	prime		NP	10
+pp1	20	0	prime		PNP or other	10
+pp2	1	0	baseline		PNP or other	11
+pp2	2	0	baseline		PNP or other	11
+pp2	3	0	baseline		PNP or other	11
+pp2	4	0	baseline		PNP or other	11
+pp2	5	0	baseline		PNP or other	11
+pp2	6	0	baseline		PNP or other	11
+pp2	7	0	baseline		PNP or other	11
+pp2	8	0	baseline		PNP or other	11
+pp2	9	0	baseline		PNP or other	11
+pp2	10	0	baseline		PNP or other	11
+pp2	11	0	baseline		PNP or other	11
+pp2	12	0	baseline		PNP or other	11
+pp2	13	0	baseline		PNP or other	11
+pp2	14	0	baseline		PNP or other	11
+pp2	15	0	baseline		PNP or other	11
+pp2	16	0	baseline		PNP or other	11
+pp2	17	0	baseline		PNP or other	11
+pp2	18	1	baseline		NP	11
+pp2	19	1	baseline		NP	11
+pp2	20	1	baseline		NP	11
+pp2	1	0	prime		PNP or other	11
+pp2	2	0	prime		PNP or other	11
+pp2	3	1	prime		NP	11
+pp2	4	1	prime		NP	11
+pp2	5	1	prime		NP	11
+pp2	6	0	prime		PNP or other	11
+pp2	7	0	prime		PNP or other	11
+pp2	8	0	prime		PNP or other	11
+pp2	9	1	prime		NP	11
+pp2	10	0	prime		PNP or other	11
+pp2	11	1	prime		NP	11
+pp2	12	1	prime		NP	11
+pp2	13	1	prime		NP	11
+pp2	14	1	prime		NP	11
+pp2	15	1	prime		NP	11
+pp2	16	0	prime		PNP or other	11
+pp2	17	1	prime		NP	11
+pp2	18	1	prime		NP	11
+pp2	19	1	prime		NP	11
+pp2	20	1	prime		NP	11
+pp4	1	0	baseline		PNP or other	18
+pp4	2	0	baseline		PNP or other	18
+pp4	3	0	baseline		PNP or other	18
+pp4	4	0	baseline		PNP or other	18
+pp4	5	0	baseline		PNP or other	18
+pp4	6	0	baseline		PNP or other	18
+pp4	7	0	baseline		PNP or other	18
+pp4	8	1	baseline		NP	18
+pp4	9	0	baseline		PNP or other	18
+pp4	10	0	baseline		PNP or other	18
+pp4	11	0	baseline		PNP or other	18
+pp4	12	0	baseline		PNP or other	18
+pp4	13	0	baseline		PNP or other	18
+pp4	14	0	baseline		PNP or other	18
+pp4	15	0	baseline		PNP or other	18
+pp4	16	0	baseline		PNP or other	18
+pp4	17	0	baseline		PNP or other	18
+pp4	18	0	baseline		PNP or other	18
+pp4	19	0	baseline		PNP or other	18
+pp4	20	0	baseline		PNP or other	18
+pp4	1	0	prime		PNP or other	18
+pp4	2	0	prime		PNP or other	18
+pp4	3	0	prime		PNP or other	18
+pp4	4	0	prime		PNP or other	18
+pp4	5	0	prime		PNP or other	18
+pp4	6	0	prime		PNP or other	18
+pp4	7	0	prime		PNP or other	18
+pp4	8	0	prime		PNP or other	18
+pp4	9	0	prime		PNP or other	18
+pp4	10	0	prime		PNP or other	18
+pp4	11	0	prime		PNP or other	18
+pp4	12	1	prime		NP	18
+pp4	13	0	prime		PNP or other	18
+pp4	14	0	prime		PNP or other	18
+pp4	15	1	prime		NP	18
+pp4	16	1	prime		NP	18
+pp4	17	1	prime		NP	18
+pp4	18	1	prime		NP	18
+pp4	19	0	prime		PNP or other	18
+pp4	20	1	prime		NP	18
+pp5	1	1	baseline		NP	11
+pp5	2	0	baseline		PNP or other	11
+pp5	3	0	baseline		PNP or other	11
+pp5	4	0	baseline		PNP or other	11
+pp5	5	0	baseline		PNP or other	11
+pp5	6	1	baseline		NP	11
+pp5	7	0	baseline		PNP or other	11
+pp5	8	0	baseline		PNP or other	11
+pp5	9	0	baseline		PNP or other	11
+pp5	10	0	baseline		PNP or other	11
+pp5	11	0	baseline		PNP or other	11
+pp5	12	0	baseline		PNP or other	11
+pp5	13	0	baseline		PNP or other	11
+pp5	14	0	baseline		PNP or other	11
+pp5	15	0	baseline		PNP or other	11
+pp5	16	0	baseline		PNP or other	11
+pp5	17	0	baseline		PNP or other	11
+pp5	18	0	baseline		PNP or other	11
+pp5	19	0	baseline		PNP or other	11
+pp5	20	0	baseline		PNP or other	11
+pp5	1	0	prime		PNP or other	11
+pp5	2	1	prime		NP	11
+pp5	3	1	prime		NP	11
+pp5	4	0	prime		PNP or other	11
+pp5	5	0	prime		PNP or other	11
+pp5	6	0	prime		PNP or other	11
+pp5	7	0	prime		PNP or other	11
+pp5	8	0	prime		PNP or other	11
+pp5	9	0	prime		PNP or other	11
+pp5	10	0	prime		PNP or other	11
+pp5	11	0	prime		PNP or other	11
+pp5	12	0	prime		PNP or other	11
+pp5	13	1	prime		NP	11
+pp5	14	0	prime		PNP or other	11
+pp5	15	0	prime		PNP or other	11
+pp5	16	0	prime		PNP or other	11
+pp5	17	0	prime		PNP or other	11
+pp5	18	0	prime		PNP or other	11
+pp5	19	0	prime		PNP or other	11
+pp5	20	0	prime		PNP or other	11
+pp6	1	0	baseline		PNP or other	17
+pp6	2	1	baseline		NP	17
+pp6	3	0	baseline		PNP or other	17
+pp6	4	1	baseline		NP	17
+pp6	5	0	baseline		PNP or other	17
+pp6	6	0	baseline		PNP or other	17
+pp6	7	1	baseline		NP	17
+pp6	8	0	baseline		PNP or other	17
+pp6	9	1	baseline		NP	17
+pp6	10	1	baseline		NP	17
+pp6	11	0	baseline		PNP or other	17
+pp6	12	0	baseline		PNP or other	17
+pp6	13	0	baseline		PNP or other	17
+pp6	14	0	baseline		PNP or other	17
+pp6	15	1	baseline		NP	17
+pp6	16	0	baseline		PNP or other	17
+pp6	17	0	baseline		PNP or other	17
+pp6	18	0	baseline		PNP or other	17
+pp6	19	0	baseline		PNP or other	17
+pp6	20	1	baseline		NP	17
+pp6	1	1	prime		NP	17
+pp6	2	1	prime		NP	17
+pp6	3	1	prime		NP	17
+pp6	4	0	prime		PNP or other	17
+pp6	5	1	prime		NP	17
+pp6	6	1	prime		NP	17
+pp6	7	0	prime		PNP or other	17
+pp6	8	1	prime		NP	17
+pp6	9	0	prime		PNP or other	17
+pp6	10	1	prime		NP	17
+pp6	11	0	prime		PNP or other	17
+pp6	12	0	prime		PNP or other	17
+pp6	13	1	prime		NP	17
+pp6	14	1	prime		NP	17
+pp6	15	1	prime		NP	17
+pp6	16	1	prime		NP	17
+pp6	17	1	prime		NP	17
+pp6	18	1	prime		NP	17
+pp6	19	1	prime		NP	17
+pp6	20	1	prime		NP	17
+pp7	1	1	baseline		NP	18
+pp7	2	0	baseline		PNP or other	18
+pp7	3	1	baseline		NP	18
+pp7	4	0	baseline		PNP or other	18
+pp7	5	1	baseline		NP	18
+pp7	6	1	baseline		NP	18
+pp7	7	0	baseline		PNP or other	18
+pp7	8	0	baseline		PNP or other	18
+pp7	9	1	baseline		NP	18
+pp7	10	1	baseline		NP	18
+pp7	11	0	baseline		PNP or other	18
+pp7	12	1	baseline		NP	18
+pp7	13	1	baseline		NP	18
+pp7	14	0	baseline		PNP or other	18
+pp7	15	1	baseline		NP	18
+pp7	16	1	baseline		NP	18
+pp7	17	1	baseline		NP	18
+pp7	18	1	baseline		NP	18
+pp7	19	1	baseline		NP	18
+pp7	20	0	baseline		PNP or other	18
+pp7	1	0	prime		PNP or other	18
+pp7	2	1	prime		NP	18
+pp7	3	0	prime		PNP or other	18
+pp7	4	1	prime		NP	18
+pp7	5	1	prime		NP	18
+pp7	6	1	prime		NP	18
+pp7	7	0	prime		PNP or other	18
+pp7	8	1	prime		NP	18
+pp7	9	1	prime		NP	18
+pp7	10	1	prime		NP	18
+pp7	11	1	prime		NP	18
+pp7	12	0	prime		PNP or other	18
+pp7	13	1	prime		NP	18
+pp7	14	1	prime		NP	18
+pp7	15	1	prime		NP	18
+pp7	16	1	prime		NP	18
+pp7	17	1	prime		NP	18
+pp7	18	1	prime		NP	18
+pp7	19	1	prime		NP	18
+pp7	20	1	prime		NP	18
+pp8	1	0	baseline		PNP or other	6
+pp8	2	0	baseline		PNP or other	6
+pp8	3	0	baseline		PNP or other	6
+pp8	4	0	baseline		PNP or other	6
+pp8	5	0	baseline		PNP or other	6
+pp8	6	0	baseline		PNP or other	6
+pp8	7	0	baseline		PNP or other	6
+pp8	8	0	baseline		PNP or other	6
+pp8	9	0	baseline		PNP or other	6
+pp8	10	0	baseline		PNP or other	6
+pp8	11	0	baseline		PNP or other	6
+pp8	12	0	baseline		PNP or other	6
+pp8	13	0	baseline		PNP or other	6
+pp8	14	0	baseline		PNP or other	6
+pp8	15	0	baseline		PNP or other	6
+pp8	16	0	baseline		PNP or other	6
+pp8	17	0	baseline		PNP or other	6
+pp8	18	0	baseline		PNP or other	6
+pp8	19	0	baseline		PNP or other	6
+pp8	20	0	baseline		PNP or other	6
+pp8	1	0	prime		PNP or other	6
+pp8	2	0	prime		PNP or other	6
+pp8	3	1	prime		NP	6
+pp8	4	1	prime		NP	6
+pp8	5	0	prime		PNP or other	6
+pp8	6	0	prime		PNP or other	6
+pp8	7	0	prime		PNP or other	6
+pp8	8	0	prime		PNP or other	6
+pp8	9	1	prime		NP	6
+pp8	10	1	prime		NP	6
+pp8	11	1	prime		NP	6
+pp8	12	1	prime		NP	6
+pp8	13	0	prime		PNP or other	6
+pp8	14	0	prime		PNP or other	6
+pp8	15	1	prime		NP	6
+pp8	16	0	prime		PNP or other	6
+pp8	17	0	prime		PNP or other	6
+pp8	18	1	prime		NP	6
+pp8	19	0	prime		PNP or other	6
+pp8	20	0	prime		PNP or other	6
+pp9	1	0	baseline		PNP or other	12
+pp9	2	0	baseline		PNP or other	12
+pp9	3	1	baseline		NP	12
+pp9	4	1	baseline		NP	12
+pp9	5	1	baseline		NP	12
+pp9	6	0	baseline		PNP or other	12
+pp9	7	0	baseline		PNP or other	12
+pp9	8	0	baseline		PNP or other	12
+pp9	9	1	baseline		NP	12
+pp9	10	1	baseline		NP	12
+pp9	11	1	baseline		NP	12
+pp9	12	0	baseline		PNP or other	12
+pp9	13	0	baseline		PNP or other	12
+pp9	14	1	baseline		NP	12
+pp9	15	0	baseline		PNP or other	12
+pp9	16	1	baseline		NP	12
+pp9	17	0	baseline		PNP or other	12
+pp9	18	1	baseline		NP	12
+pp9	19	0	baseline		PNP or other	12
+pp9	20	1	baseline		NP	12
+pp9	1	0	prime		PNP or other	12
+pp9	2	1	prime		NP	12
+pp9	3	1	prime		NP	12
+pp9	4	1	prime		NP	12
+pp9	5	0	prime		PNP or other	12
+pp9	6	0	prime		PNP or other	12
+pp9	7	0	prime		PNP or other	12
+pp9	8	1	prime		NP	12
+pp9	9	1	prime		NP	12
+pp9	10	1	prime		NP	12
+pp9	11	0	prime		PNP or other	12
+pp9	12	1	prime		NP	12
+pp9	13	1	prime		NP	12
+pp9	14	0	prime		PNP or other	12
+pp9	15	0	prime		PNP or other	12
+pp9	16	0	prime		PNP or other	12
+pp9	17	1	prime		NP	12
+pp9	18	0	prime		PNP or other	12
+pp9	19	1	prime		NP	12
+pp9	20	0	prime		PNP or other	12
