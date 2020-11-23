@@ -1,0 +1,350 @@
+
+---
+output:
+  html_document: default
+  pdf_document: default
+  word_document: default
+---
+#Mixed-models in R 
+
+
+**Important concepts**
+
+1. Many names (multilevel, fixed-and-random effects, ...). The mixture of fixed and random effects is what makes the mixed model a mixed model. 
+
+2. Like linear models, describe a relationship between a response variable and some of the covariates that have been measured or observed along with the response. 
+
+3. Differently from linear models, they can handle both between and??within subjects data, data with repeated measures
+
+4. VERY POWERFUL compared to traditional approaches (e.g. rmANOVA), including:
+ 
+5. Data analyzed at multiple levels (trial, participant, ...). Mixed models account for items and subject variation in a single model.  
+
+* No loss of information!  More of the involved processes can be modelled.
+* Unbalanced designs
+* Missing data
+
+**Assumptions**
+
+1. LMM assumptions: 
+
+* Non-independency assumption: repeated-measures designs
+* Residuals are assumed to be normally distributed, and the regression line is fitted to the data such that the mean of the residuals is zero. Must be checked!
+
+2. GLMM assumptions
+
+* Handle non-normal distribution of the DV. Ex. Binomial DV 
+* Non-independency assumption: repeated-measures data
+
+
+**Random vs.Fixed Effects**
+
+1. Random effects: 
+
+Factors whose levels were sampled randomly from a larger population about which we wish to generalize. In other words, the levels occurring in the current sample are only a subset of the levels occurring in the population 
+
+* Ex: Humans or animals, stimuli items presented to human participants, etc. 
+
+2. Fixed effects: 
+
+Fixed effects are the factors of interest that we manipulate in a study. They've been the kinds of variables, the independent variable
+
+* Ex: Participants' gender, weight, age, drug vs. placebo; congruent vs. incongruent; low versus high loss amount, etc.
+
+
+**Random intercept models vs.Random  slope models**
+
+1. Random intercept models do not allow adjustments to the intercept
+
+* DV ~ IV1 + IV2 + (1 | participants) + (1 | items) 
+
+2. Random slope models allow each group line to have a different. They allow the explanatory variable to have a different effect for each group. i.e., they allow the relationship between the explanatory variable and the response to be different for each group.
+
+* DV ~ IV1 + IV2 + (1 + IV| participants) + ( 1 | items) 
+
+* DV ~ IV1 + IV2 + (1 + IV*IV| participants) + ( 1 | items) 
+
+**Contrasts setting**
+
+1. Used to to checked which groups differ from which others. More info (Schad et al., 2020)
+
+* Deviation coding:  compares the mean of the dependent variable for a given level to the overall mean of the dependent variable. Used frequently to test the difference between two factor levels
+
+* Dummy coding: compares each level of the categorical variable to a fixed reference level (baseline).
+
+**likelihood-ratio tests**
+
+1. Likelihood ratio tests for model selection. 
+
+The basic idea is that if the AIC (or BIC) is lower (e.g. when comparing random slope models and random intercept models) then the gain in fit is worth the extra model complexity.
+
+##Datasets
+
+**Bodysway**
+
+
+![alt text](/Users/nataliaresende/Dropbox/Screenshots/Screenshot 2020-11-19 at 10.47.43.png)
+
+**Structure**
+
+Body sway in response to happy (20), angry(20), and neutral (20) pictures of faces in adolescents.Each pp contributes 60 data points. Total 2400 data points. 
+
+* 40 participants.Each pp contributes 60 data points. Total 2400 data points. 
+
+* DV: Body sway (SD_AP)
+
+* IV: Picture Category 
+* IV: Block number (1, 2, 3)
+* IV: Picture number within block (1-20) 
+* IV: Picture identity (20 identities) 
+
+![alt text](/Users/nataliaresende/Dropbox/Screenshots/Screenshot 2020-11-19 at 10.50.29.png)
+
+
+**Coding in R studio**
+
+1. Preparatory steps
+2. Descriptive analysis
+3. Data transformation (if necessary)
+4. Contrasts
+5. Model fit
+6. Model selection
+7. Model diagnosis
+8. P-values
+
+###R Studio
+
+Let's load body sway dataset
+
+```{r}
+
+Bodyway_R_course.2 <- read.csv("~/Dropbox/MixedEffectsModel/Bodyway_R_course 2.csv", sep=";")
+```
+
+
+Some preprocessing...
+```{r}
+bodysway=Bodyway_R_course.2
+bodysway= bodysway[-c(4)]
+
+```
+
+make DV numeric
+```{r}
+bodysway$SD_AP <- as.numeric(bodysway$SD_AP)
+```
+For factors, it's best NOT to use numerical indicators as this might lead to confusion whether it's numerical or not, so change that:
+```{r}
+# subject
+bodysway$Subject_f <- as.factor(bodysway$Subject_f)
+
+# PicCategory
+bodysway$PicCategory_f <- as.factor(bodysway$PicCategory_f)
+
+#PicIdentity, make factor variable out of it
+bodysway$PicIdent_f <- as.factor(bodysway$PicIdent_f)
+```
+Get descriptives
+
+```{r}
+library(ggplot2)
+library(psych)
+
+with(bodysway, describeBy(SD_AP, group = list(PicCategory_f), mat = TRUE))
+with(bodysway, describeBy(SD_AP, group = list(gender_f), mat = TRUE))
+with(bodysway, describeBy(SD_AP, group = list(BlockNr), mat = TRUE))
+
+
+#picture category
+barSD_AP <- ggplot(bodysway, aes(PicCategory_f, SD_AP)) 
+
+barSD_AP+ stat_summary(fun.y = mean, geom = "bar", fill = "White", colour = "Black") + stat_summary (fun.data = mean_cl_normal, geom = "errorbar", width = 0.2) + labs (x = "Picture Category", y = "Mean SD_AP") # add error bars
+
+#gender
+barSD_AP <- ggplot(bodysway, aes(gender_f, SD_AP)) 
+
+barSD_AP+ stat_summary(fun.y = mean, geom = "bar", fill = "White", colour = "Black") + stat_summary (fun.data = mean_cl_normal, geom = "errorbar", width = 0.2) + labs (x = "Gender", y = "Mean SD_AP") # add error bars
+
+#block number
+barSD_AP <- ggplot(bodysway, aes(BlockNr, SD_AP)) 
+
+barSD_AP+ stat_summary(fun.y = mean, geom = "bar", fill = "White", colour = "Black") + stat_summary (fun.data = mean_cl_normal, geom = "errorbar", width = 0.2) + labs (x = "Block", y = "Mean SD_AP") # add error bars
+
+```
+
+Density plots per participant and items
+
+```{r}
+library(lattice)
+#density plots per participant
+with(bodysway, densityplot(~SD_AP | Subject_f))
+with(bodysway, densityplot(~SD_AP | PicIdent_f))
+```
+
+DV distribution check
+
+```{r}
+
+library(lattice) #for histograms
+
+
+hist.SD_AP <- ggplot(bodysway, aes(SD_AP)) + theme(legend.position = "none") + geom_histogram(aes(y=..density..), colour = "black", fill = "white") +  labs(x = "SD_AP", y = "Density") + stat_function (fun = dnorm, args = list(mean = mean(bodysway$SD_AP, na.rm = TRUE), sd = sd(bodysway$SD_AP, na.rm = TRUE)), colour = "black", size = 1) 
+hist.SD_AP
+
+with(bodysway, densityplot(SD_AP)) 
+
+
+#skewness and kurtosis
+skew(bodysway$SD_AP) #0 - symmetric
+```
+Data transformation - centering data DV and IV - good practice! [linked phrase](https://statisticsbyjim.com/regression/standardize-variables-regression/)
+```{r}
+ 
+bodysway$SD_APz <- scale(bodysway$SD_AP, scale = FALSE)
+
+
+#checking distribution skewness
+skew(bodysway$SD_APz) #skewness  0
+
+#plots distribution DV centered 
+
+hist.SD_APz <- ggplot(bodysway, aes(SD_APz)) + theme(legend.position = "none") + geom_histogram(aes(y=..density..), colour = "black", fill = "white") +  labs(x = "SD_AP", y = "Density") + stat_function (fun = dnorm, args = list(mean = mean(bodysway$SD_APz, na.rm = TRUE), sd = sd(bodysway$SD_APz, na.rm = TRUE)), colour = "black", size = 1) 
+
+hist.SD_APz
+
+hist(bodysway$SD_APz)
+
+#centering continuous variables
+bodysway$BlockNr_c <- scale(bodysway$BlockNr, center = TRUE, scale = TRUE)
+bodysway$PicNr_c <- scale(bodysway$PicNr, center = TRUE, scale = TRUE)
+
+
+```
+Contrasts setting
+
+```{r}
+# Angry and Happy as opposed to Neutral
+bodysway$EmotionVsNeutral <- as.factor(ifelse(bodysway$PicCategory_f == 'A' | bodysway$PicCategory_f == 'H', 'Emotion', ifelse(bodysway$PicCategory_f == 'N', 'Neutral', NA)))
+
+
+options(contrasts = c("contr.sum", "contr.poly"))
+#1) Save contrast matrix into a variable
+Dev_cont_EmotionVsNeutral_f <- contrasts(bodysway$EmotionVsNeutral)
+#2) Add a first column of 1's (for the intercept)"
+Dev_cont_EmotionVsNeutral_f <- cbind(c(1,1), Dev_cont_EmotionVsNeutral_f)
+#3)Invert (=solve) the matrix, to get the actual weights
+solve(Dev_cont_EmotionVsNeutral_f)
+
+```
+Models
+
+```{r}
+
+attach(bodysway)
+names(bodysway)
+library(lme4)
+#backwards procedure 
+
+m1 <- lmer(SD_APz ~  gender_f + EmotionVsNeutral *  PicNr_c * BlockNr_c + (1 + EmotionVsNeutral * PicNr_c * BlockNr_c | Subject_f) + (1 | PicIdent_f), data = bodysway)
+
+#increased number of interactions
+m2 <- lmer(SD_APz ~  gender_f + EmotionVsNeutral *  PicNr_c * BlockNr_c + (1 + EmotionVsNeutral * PicNr_c * BlockNr_c | Subject_f) + (1 | PicIdent_f), data = bodysway, control=lmerControl(optCtrl=list(maxfun=2000000)))
+print(summary(m2), corr = FALSE) #converged
+
+m3 <- lmer(SD_APz ~  gender_f + EmotionVsNeutral *  PicNr_c * BlockNr_c + (1 + EmotionVsNeutral | Subject_f) + (1 | PicIdent_f), data = bodysway, control=lmerControl(optCtrl=list(maxfun=2000000)))
+
+
+#random intercept for PicIndent removed
+m4 <- lmer(SD_APz ~  gender_f + EmotionVsNeutral *  PicNr_c * BlockNr_c + (1 + EmotionVsNeutral | Subject_f), data = bodysway, control=lmerControl(optCtrl=list(maxfun=2000000)))
+print(summary(m4), corr = FALSE) #converged
+
+m5 <- lmer(SD_APz ~  gender_f + EmotionVsNeutral +  PicNr_c + BlockNr_c + (1  | Subject_f), data = bodysway, control=lmerControl(optCtrl=list(maxfun=2000000)))
+
+
+
+```
+Model selection
+
+```{r}
+#models comparison - Likelihood ratio test
+anova(m3,m2) 
+anova(m3,m4)
+anova(m3,m4) 
+anova(m2,m4) 
+anova(m5,m4) #interaction effects highly significant
+#best model - model 4
+```
+Model diagnosis
+
+```{r}
+plot(m4) # fitted vs. residuals
+
+densityplot(resid(m4)) # distribution of the residuals
+
+qqnorm(resid(m4))
+
+```
+Get P-values
+```{r}
+library(car)
+Anova_m4 <- Anova(m4, type = 3, test = 'F')
+Anova_m4
+```
+
+
+**MTrill dataset (GLMM)**
+
+
+Impact of Google Translate on English syntactic processing. Check whether participants re-use in their subsequent speech the syntactic structure previously seen in the Google output. 
+
+![alt text](/Users/nataliaresende/Dropbox/Screenshots/Screenshot 2020-11-19 at 11.05.40.png)
+
+**Structure**
+
+* Syntactic structure used: noun phrases with a relation of possession between nouns
+(e.g. A capa do livro e vermelha >> The book Cover is red (NP) OR The cover of the book is red (PNP))
+
+* Two phases: pre-test phase (baseline) and priming phase
+
+* 19 participants. Each pp contributes to 40 data points (20 pre-test and 20 priming test). Total 760 datapoints
+
+* Binominal DV: "1" if pp re-used the structure and "0" if pp did not re-use
+
+* IV: Structure used (PNP/other or NP)
+
+* IV: English test grade (continuous)
+
+* IV: Type of test: Baseline/Priming
+
+
+
+
+
+####Reporting Results 
+
+**Rules of Thumb**
+
+* Reproducible analysis: "Will people be able to re-create the analysis?"
+
+* Mention if you have random intercepts and random slopes
+
+* Report coefficients/estimates not only  p-values
+
+* Citation - Package versions and software version
+
+* Mention you checked the assumptions: mention you checked the residual distribution
+
+* Mention how you obtained p-values. 
+
+**Suggested reading**
+
+* Bates, D.M., Maechler, M., & Bolker, B. (2012). lme4: Linear mixed-effects models using S4 classes. R package version 0.999999-0. 
+
+* Baayen, R.H. (2008). Analyzing Linguistic Data: A Practical Introduction to Statistics Using R. Cambridge: Cambridge University Press. 
+
+* Baayen, R.H., Davidson, D.J., Bates, D.M. (2008). Mixed-effects modeling with crossed random effects for subjects and items. Journal of Memory and Language, 59, 390-412. 
+
+* Barr, D.J., Levy, R., Scheepers, C., & Tilly, H. J. (2013). Random effects structure for confirmatory hypothesis testing: Keep it maximal. Journal of Memory and Language, 68, 255???278.
+
+* Daniel J. Schad, Shravan Vasishth, Sven Hohenstein, Reinhold Kliegl. (2020). How to capitalize on a priori contrasts in linear (mixed) models: A tutorial, Journal of Memory and Language, volume 110.  
+
